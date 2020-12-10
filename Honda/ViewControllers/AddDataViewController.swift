@@ -1,6 +1,6 @@
 import UIKit
 
-class AddDataViewController: UITableViewController , UITextFieldDelegate , AddDataDelegate {
+class AddDataViewController: UITableViewController , UITextFieldDelegate {
 
     weak var delegate : AddDataDelegate?
     

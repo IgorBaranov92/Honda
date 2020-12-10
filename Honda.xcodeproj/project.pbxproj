@@ -24,7 +24,7 @@
 		7853346422F1F92F00043CEE /* FixTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853346322F1F92F00043CEE /* FixTableViewCell.swift */; };
 		7860111322EB4EEB002F14A1 /* ServiceListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7860111222EB4EEB002F14A1 /* ServiceListTableViewController.swift */; };
 		7860111522EB4EF9002F14A1 /* ServiceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7860111422EB4EF9002F14A1 /* ServiceListTableViewCell.swift */; };
-		78645CD625825B9900693ED7 /* Mileage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78645CD525825B9900693ED7 /* Mileage.swift */; };
+		78645CD625825B9900693ED7 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78645CD525825B9900693ED7 /* Record.swift */; };
 		78645CDB25825CCD00693ED7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 78645CDA25825CCD00693ED7 /* RealmSwift */; };
 		78645CDD25825CCD00693ED7 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 78645CDC25825CCD00693ED7 /* Realm */; };
 		78645CE025825DBF00693ED7 /* OperationR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78645CDF25825DBF00693ED7 /* OperationR.swift */; };
@@ -33,6 +33,7 @@
 		787F7DDF22902F0E009A003F /* ServiceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F7DDE22902F0E009A003F /* ServiceList.swift */; };
 		78ACC6801EB0FCA00073E034 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACC67F1EB0FCA00073E034 /* Data.swift */; };
 		78ACC6841EB12FAC0073E034 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACC6831EB12FAC0073E034 /* DetailsTableViewCell.swift */; };
+		78B1B1912582737400088B9D /* Consumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B1B1902582737400088B9D /* Consumption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +60,7 @@
 		7860111122EB4B1E002F14A1 /* Consumption_v 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Consumption_v 6.xcdatamodel"; sourceTree = "<group>"; };
 		7860111222EB4EEB002F14A1 /* ServiceListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListTableViewController.swift; sourceTree = "<group>"; };
 		7860111422EB4EF9002F14A1 /* ServiceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListTableViewCell.swift; sourceTree = "<group>"; };
-		78645CD525825B9900693ED7 /* Mileage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mileage.swift; sourceTree = "<group>"; };
+		78645CD525825B9900693ED7 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		78645CDF25825DBF00693ED7 /* OperationR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationR.swift; sourceTree = "<group>"; };
 		78645CE22582644400693ED7 /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
 		78645CE6258266F200693ED7 /* OperationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		78ACC67C1EB0AA0F0073E034 /* Consumption_v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Consumption_v2.xcdatamodel; sourceTree = "<group>"; };
 		78ACC67F1EB0FCA00073E034 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		78ACC6831EB12FAC0073E034 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		78B1B1902582737400088B9D /* Consumption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +167,8 @@
 			children = (
 				787F7DDE22902F0E009A003F /* ServiceList.swift */,
 				78ACC67F1EB0FCA00073E034 /* Data.swift */,
-				78645CD525825B9900693ED7 /* Mileage.swift */,
+				78645CD525825B9900693ED7 /* Record.swift */,
+				78B1B1902582737400088B9D /* Consumption.swift */,
 				78645CDF25825DBF00693ED7 /* OperationR.swift */,
 				78645CE22582644400693ED7 /* Operations.swift */,
 			);
@@ -286,7 +289,8 @@
 				7853346422F1F92F00043CEE /* FixTableViewCell.swift in Sources */,
 				78645CE7258266F200693ED7 /* OperationsViewController.swift in Sources */,
 				780A7ADD1EAA327500C104B9 /* ConsumptionTableViewCell.swift in Sources */,
-				78645CD625825B9900693ED7 /* Mileage.swift in Sources */,
+				78645CD625825B9900693ED7 /* Record.swift in Sources */,
+				78B1B1912582737400088B9D /* Consumption.swift in Sources */,
 				780A7AE11EAA3CC400C104B9 /* AddDataViewController.swift in Sources */,
 				7820B01B1EAA221B00CF4145 /* AppDelegate.swift in Sources */,
 			);

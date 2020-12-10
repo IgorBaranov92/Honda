@@ -1,7 +1,7 @@
 import Foundation
 
 protocol AddDataDelegate : class {
-    func addDataWith(mileage:Int,litrage:Double,place:String?,tripType:String,petrolType:String,differenceMileage:Int)
+    func addDataWith(mileage:Int,litrage:Double,place:String,tripType:String,petrolType:String,differenceMileage:Int)
 }
 
 
