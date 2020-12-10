@@ -3,12 +3,17 @@ import UIKit
 class AddOperaionViewController: UIViewController{
 
     // MARK: - Public API
-    var currentTitle = String()
+    var operation = String() { didSet {
+        operationLabel.text = operation
+    }}
+    
+    weak var delegate: AddOperationDelegate?
+    
     @IBOutlet weak var infoTextField: UITextField!
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var mileageTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var operationLabel: UILabel!
    
         
     // MARK: - Action
@@ -17,12 +22,13 @@ class AddOperaionViewController: UIViewController{
     }
     
     private func done() {
-        if infoTextField.text == "" || priceTextField.text == "" || mileageTextField.text == "" {
+        if infoTextField.text == "" || priceTextField.text == "" || mileageTextField.text == "" || operation == "" {
             let alert = UIAlertController(title: "Ошибка!", message: "Не заполнены все поля", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             present(alert, animated: true)
         } else {
-            
+            delegate?.addOperationWith(mileage: Int(mileageTextField.text!)!, price: Int(priceTextField.text!)!, type: operation, info: infoTextField.text!)
+            navigationController?.popViewController(animated: true)
         }
     }
 }
@@ -31,47 +37,21 @@ class AddOperaionViewController: UIViewController{
 extension AddOperaionViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return ServiceList.categories.count
+        return ServiceList.types.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
-        case 0: return ServiceList.engine.count
-        case 1: return ServiceList.transmisson.count
-        case 2: return ServiceList.suspension.count
-        case 3: return ServiceList.brakeSystem.count
-        case 4: return ServiceList.electric.count
-        case 5: return ServiceList.misc.count
-        default: break
-        }
-        return 0
+        return ServiceList.categories[ServiceList.types[section]]!.count
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section {
-        case 0: return "Двигатель"
-        case 1: return "АКПП"
-        case 2: return "Подвеска"
-        case 3: return "Тормозная система"
-        case 4: return "Электрика"
-        case 5: return "Разное"
-        default: break
-        }
-        return nil
+        return ServiceList.types[section]
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "operationCell", for: indexPath)
         if let myCell = cell as? ServiceListTableViewCell {
-            switch indexPath.section {
-            case 0: myCell.detailLabel.text = ServiceList.engine[indexPath.row]
-            case 1: myCell.detailLabel.text = ServiceList.transmisson[indexPath.row]
-            case 2: myCell.detailLabel.text = ServiceList.suspension[indexPath.row]
-            case 3: myCell.detailLabel.text = ServiceList.brakeSystem[indexPath.row]
-            case 4: myCell.detailLabel.text = ServiceList.electric[indexPath.row]
-            case 5: myCell.detailLabel.text = ServiceList.misc[indexPath.row]
-            default:break
-            }
+            myCell.detailLabel.text = ServiceList.categories[ServiceList.types[indexPath.section]]![indexPath.row]
             return myCell
         }
 
@@ -86,6 +66,7 @@ extension AddOperaionViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        operation = ServiceList.categories[ServiceList.types[indexPath.section]]![indexPath.row]
     }
     
 }

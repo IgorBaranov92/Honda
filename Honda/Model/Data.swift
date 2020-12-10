@@ -1,15 +1,13 @@
 import Foundation
 
 protocol AddDataDelegate : class {
-    func addDataWith(mileage:Int,litrage:Double,place:String,tripType:String,petrolType:String,differenceMileage:Int)
+    func addDataWith(mileage:Int,litrage:Double,place:String,tripType:String,petrolType:String)
+    func cancel()
 }
 
-
-protocol ChangeOperationDelegate : class {
-    func changeOperationWith(mileage:Int,price:Int,info:String,indexPath:IndexPath)
+protocol AddOperationDelegate: class {
+    func addOperationWith(mileage:Int,price:Int,type:String,info:String)
 }
-
-
 
 extension String {
     func getFirstCharacterFromString() -> String {

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MileageView" customModule="Honda" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HGv-Sh-iDV">
+                    <rect key="frame" x="8" y="196" width="327" height="82"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ptm-io-s6b">
+                            <rect key="frame" x="0.0" y="0.0" width="327" height="32"/>
+                            <segments>
+                                <segment title="ГПН"/>
+                                <segment title="Shell"/>
+                                <segment title="Роснефть"/>
+                                <segment title="Другое"/>
+                            </segments>
+                        </segmentedControl>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="z18-PN-RAY">
+                            <rect key="frame" x="0.0" y="51" width="327" height="32"/>
+                            <segments>
+                                <segment title="95"/>
+                                <segment title="95G"/>
+                                <segment title="98"/>
+                                <segment title="98G"/>
+                            </segments>
+                        </segmentedControl>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Npb-0E-gS5">
+                    <rect key="frame" x="8" y="101" width="327" height="87"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Stl-Ag-Bcm">
+                            <rect key="frame" x="0.0" y="0.0" width="327" height="35"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пробег" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jD-je-V3U">
+                                    <rect key="frame" x="0.0" y="0.0" width="81" height="35"/>
+                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVl-Ow-N1b" customClass="NonPasteableTextField" customModule="Honda" customModuleProvider="target">
+                                    <rect key="frame" x="92" y="0.0" width="235" height="35"/>
+                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="22"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="6AY-h8-fzY">
+                            <rect key="frame" x="0.0" y="52" width="327" height="35"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Литров" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfG-oH-ybR">
+                                    <rect key="frame" x="0.0" y="0.0" width="81" height="35"/>
+                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4i3-Sp-9K4" customClass="NonPasteableTextField" customModule="Honda" customModuleProvider="target">
+                                    <rect key="frame" x="92" y="0.0" width="235" height="35"/>
+                                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="22"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="16" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DM2-u7-6NF">
+                    <rect key="frame" x="8" y="286" width="327" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hy4-d7-tEa" customClass="DoneButton" customModule="Honda" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="155.5" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="1b4-zF-HM1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                            <state key="normal" title="Заправить">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" red="0.45636138230000001" green="0.72053745489999999" blue="0.86431224080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="add:" destination="iN0-l3-epB" eventType="touchUpInside" id="dKa-NC-hrw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WY9-LG-Vhv" customClass="DoneButton" customModule="Honda" customModuleProvider="target">
+                            <rect key="frame" x="171.5" y="0.0" width="155.5" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="SGt-pt-T5a"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                            <state key="normal" title="Отмена">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" red="0.45636138230000001" green="0.72053745489999999" blue="0.86431224080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="H4F-G4-oUp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заправка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pw-qe-JTB">
+                    <rect key="frame" x="121" y="54" width="101.5" height="29"/>
+                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Npb-0E-gS5" firstAttribute="top" secondItem="1Pw-qe-JTB" secondAttribute="bottom" constant="18" id="0Jy-C4-EKC"/>
+                <constraint firstItem="HGv-Sh-iDV" firstAttribute="top" secondItem="Npb-0E-gS5" secondAttribute="bottom" constant="8" id="31H-Zc-0Dp"/>
+                <constraint firstItem="HGv-Sh-iDV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="8kC-8o-wW3"/>
+                <constraint firstItem="1Pw-qe-JTB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="JRg-99-34L"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Npb-0E-gS5" secondAttribute="trailing" constant="8" id="LiZ-U8-rho"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DM2-u7-6NF" secondAttribute="trailing" constant="8" id="Utk-RR-uTl"/>
+                <constraint firstItem="DM2-u7-6NF" firstAttribute="top" secondItem="HGv-Sh-iDV" secondAttribute="bottom" constant="8" symbolic="YES" id="Vdo-UU-3hi"/>
+                <constraint firstItem="DM2-u7-6NF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="XWV-ow-PGl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HGv-Sh-iDV" secondAttribute="trailing" constant="8" id="aDd-tL-HFO"/>
+                <constraint firstItem="Npb-0E-gS5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="abK-G0-i3U"/>
+                <constraint firstItem="1Pw-qe-JTB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="j7k-ad-XpD"/>
+            </constraints>
+            <connections>
+                <outlet property="litrageTextField" destination="4i3-Sp-9K4" id="L9Y-49-pqh"/>
+                <outlet property="mileAgeTextField" destination="dVl-Ow-N1b" id="MHg-2D-KDE"/>
+                <outlet property="petrolControl" destination="z18-PN-RAY" id="Ve9-5F-qqN"/>
+                <outlet property="placeControl" destination="Ptm-io-s6b" id="b2k-bK-LbU"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="89.732142857142847"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Hy4-d7-tEa">
+            <size key="intrinsicContentSize" width="113" height="41"/>
+        </designable>
+        <designable name="WY9-LG-Vhv">
+            <size key="intrinsicContentSize" width="84" height="41"/>
+        </designable>
+    </designables>
+</document>

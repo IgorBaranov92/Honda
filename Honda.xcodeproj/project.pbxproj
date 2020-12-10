@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		780A7AD91EAA325F00C104B9 /* ConsumptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A7AD81EAA325F00C104B9 /* ConsumptionTableViewController.swift */; };
 		780A7ADD1EAA327500C104B9 /* ConsumptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A7ADC1EAA327500C104B9 /* ConsumptionTableViewCell.swift */; };
-		780A7AE11EAA3CC400C104B9 /* AddDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A7AE01EAA3CC400C104B9 /* AddDataViewController.swift */; };
 		780A7AE61EAA57CB00C104B9 /* NonPasteableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A7AE51EAA57CB00C104B9 /* NonPasteableTextField.swift */; };
-		780FD31C248FCD460026A46B /* ServiceStatisticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780FD31B248FCD460026A46B /* ServiceStatisticTableViewController.swift */; };
-		780FD31E248FCD580026A46B /* ServiceStatisticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780FD31D248FCD580026A46B /* ServiceStatisticTableViewCell.swift */; };
 		7820B01B1EAA221B00CF4145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7820B01A1EAA221B00CF4145 /* AppDelegate.swift */; };
 		7820B0201EAA221B00CF4145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7820B01E1EAA221B00CF4145 /* Main.storyboard */; };
 		7820B0231EAA221B00CF4145 /* Consumption.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7820B0211EAA221B00CF4145 /* Consumption.xcdatamodeld */; };
@@ -20,8 +17,11 @@
 		7820B0331EAA2FB400CF4145 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7820B0321EAA2FB400CF4145 /* Launch Screen.storyboard */; };
 		784A08EA1FB9F29F000C00C4 /* AddOperaionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A08E91FB9F29F000C00C4 /* AddOperaionViewController.swift */; };
 		784A08EE1FB9F60A000C00C4 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A08ED1FB9F60A000C00C4 /* ServiceTableViewCell.swift */; };
-		7853346222F1F80000043CEE /* FixTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853346122F1F80000043CEE /* FixTableViewController.swift */; };
-		7853346422F1F92F00043CEE /* FixTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853346322F1F92F00043CEE /* FixTableViewCell.swift */; };
+		784BDDF92582932600D605EF /* MileageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784BDDF82582932600D605EF /* MileageView.swift */; };
+		784BDDFC2582933600D605EF /* MileageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784BDDFB2582933600D605EF /* MileageView.xib */; };
+		784BDDFF2582940500D605EF /* DoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784BDDFE2582940500D605EF /* DoneButton.swift */; };
+		784BDE03258298E200D605EF /* AppearenceAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784BDE02258298E200D605EF /* AppearenceAnimator.swift */; };
+		784BDE06258298FD00D605EF /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784BDE05258298FD00D605EF /* Constraints.swift */; };
 		7860111522EB4EF9002F14A1 /* ServiceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7860111422EB4EF9002F14A1 /* ServiceListTableViewCell.swift */; };
 		78645CD625825B9900693ED7 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78645CD525825B9900693ED7 /* Record.swift */; };
 		78645CDB25825CCD00693ED7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 78645CDA25825CCD00693ED7 /* RealmSwift */; };
@@ -31,17 +31,13 @@
 		78645CE7258266F200693ED7 /* OperationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78645CE6258266F200693ED7 /* OperationsViewController.swift */; };
 		787F7DDF22902F0E009A003F /* ServiceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F7DDE22902F0E009A003F /* ServiceList.swift */; };
 		78ACC6801EB0FCA00073E034 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACC67F1EB0FCA00073E034 /* Data.swift */; };
-		78ACC6841EB12FAC0073E034 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACC6831EB12FAC0073E034 /* DetailsTableViewCell.swift */; };
 		78B1B1912582737400088B9D /* Consumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B1B1902582737400088B9D /* Consumption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		780A7AD81EAA325F00C104B9 /* ConsumptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsumptionTableViewController.swift; sourceTree = "<group>"; };
 		780A7ADC1EAA327500C104B9 /* ConsumptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsumptionTableViewCell.swift; sourceTree = "<group>"; };
-		780A7AE01EAA3CC400C104B9 /* AddDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDataViewController.swift; sourceTree = "<group>"; };
 		780A7AE51EAA57CB00C104B9 /* NonPasteableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonPasteableTextField.swift; sourceTree = "<group>"; };
-		780FD31B248FCD460026A46B /* ServiceStatisticTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStatisticTableViewController.swift; sourceTree = "<group>"; };
-		780FD31D248FCD580026A46B /* ServiceStatisticTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStatisticTableViewCell.swift; sourceTree = "<group>"; };
 		7820B0171EAA221B00CF4145 /* Honda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7820B01A1EAA221B00CF4145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7820B01F1EAA221B00CF4145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,8 +50,11 @@
 		784A08E41FB9EF08000C00C4 /* Consumption_v3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Consumption_v3.xcdatamodel; sourceTree = "<group>"; };
 		784A08E91FB9F29F000C00C4 /* AddOperaionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOperaionViewController.swift; sourceTree = "<group>"; };
 		784A08ED1FB9F60A000C00C4 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
-		7853346122F1F80000043CEE /* FixTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixTableViewController.swift; sourceTree = "<group>"; };
-		7853346322F1F92F00043CEE /* FixTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixTableViewCell.swift; sourceTree = "<group>"; };
+		784BDDF82582932600D605EF /* MileageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MileageView.swift; sourceTree = "<group>"; };
+		784BDDFB2582933600D605EF /* MileageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MileageView.xib; sourceTree = "<group>"; };
+		784BDDFE2582940500D605EF /* DoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneButton.swift; sourceTree = "<group>"; };
+		784BDE02258298E200D605EF /* AppearenceAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearenceAnimator.swift; sourceTree = "<group>"; };
+		784BDE05258298FD00D605EF /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		7860111122EB4B1E002F14A1 /* Consumption_v 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Consumption_v 6.xcdatamodel"; sourceTree = "<group>"; };
 		7860111422EB4EF9002F14A1 /* ServiceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListTableViewCell.swift; sourceTree = "<group>"; };
 		78645CD525825B9900693ED7 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
@@ -65,7 +64,6 @@
 		787F7DDE22902F0E009A003F /* ServiceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceList.swift; sourceTree = "<group>"; };
 		78ACC67C1EB0AA0F0073E034 /* Consumption_v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Consumption_v2.xcdatamodel; sourceTree = "<group>"; };
 		78ACC67F1EB0FCA00073E034 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		78ACC6831EB12FAC0073E034 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		78B1B1902582737400088B9D /* Consumption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,11 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				780A7ADC1EAA327500C104B9 /* ConsumptionTableViewCell.swift */,
-				78ACC6831EB12FAC0073E034 /* DetailsTableViewCell.swift */,
 				784A08ED1FB9F60A000C00C4 /* ServiceTableViewCell.swift */,
 				7860111422EB4EF9002F14A1 /* ServiceListTableViewCell.swift */,
-				7853346322F1F92F00043CEE /* FixTableViewCell.swift */,
-				780FD31D248FCD580026A46B /* ServiceStatisticTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -150,11 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				78645CE6258266F200693ED7 /* OperationsViewController.swift */,
-				780A7AD81EAA325F00C104B9 /* ConsumptionTableViewController.swift */,
-				780A7AE01EAA3CC400C104B9 /* AddDataViewController.swift */,
 				784A08E91FB9F29F000C00C4 /* AddOperaionViewController.swift */,
-				7853346122F1F80000043CEE /* FixTableViewController.swift */,
-				780FD31B248FCD460026A46B /* ServiceStatisticTableViewController.swift */,
+				780A7AD81EAA325F00C104B9 /* ConsumptionTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -175,6 +167,11 @@
 		78645CEC25826F8200693ED7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				784BDDF82582932600D605EF /* MileageView.swift */,
+				784BDDFB2582933600D605EF /* MileageView.xib */,
+				784BDDFE2582940500D605EF /* DoneButton.swift */,
+				784BDE02258298E200D605EF /* AppearenceAnimator.swift */,
+				784BDE05258298FD00D605EF /* Constraints.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,6 +255,7 @@
 				7820B0331EAA2FB400CF4145 /* Launch Screen.storyboard in Resources */,
 				7820B0251EAA221B00CF4145 /* Assets.xcassets in Resources */,
 				7820B0201EAA221B00CF4145 /* Main.storyboard in Resources */,
+				784BDDFC2582933600D605EF /* MileageView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,22 +270,20 @@
 				78ACC6801EB0FCA00073E034 /* Data.swift in Sources */,
 				78645CE32582644400693ED7 /* Operations.swift in Sources */,
 				7860111522EB4EF9002F14A1 /* ServiceListTableViewCell.swift in Sources */,
-				780FD31C248FCD460026A46B /* ServiceStatisticTableViewController.swift in Sources */,
 				784A08EA1FB9F29F000C00C4 /* AddOperaionViewController.swift in Sources */,
-				780FD31E248FCD580026A46B /* ServiceStatisticTableViewCell.swift in Sources */,
-				7853346222F1F80000043CEE /* FixTableViewController.swift in Sources */,
 				7820B0231EAA221B00CF4145 /* Consumption.xcdatamodeld in Sources */,
+				784BDDF92582932600D605EF /* MileageView.swift in Sources */,
 				784A08EE1FB9F60A000C00C4 /* ServiceTableViewCell.swift in Sources */,
 				787F7DDF22902F0E009A003F /* ServiceList.swift in Sources */,
-				78ACC6841EB12FAC0073E034 /* DetailsTableViewCell.swift in Sources */,
+				784BDDFF2582940500D605EF /* DoneButton.swift in Sources */,
 				78645CE025825DBF00693ED7 /* OperationR.swift in Sources */,
 				780A7AE61EAA57CB00C104B9 /* NonPasteableTextField.swift in Sources */,
-				7853346422F1F92F00043CEE /* FixTableViewCell.swift in Sources */,
+				784BDE03258298E200D605EF /* AppearenceAnimator.swift in Sources */,
+				784BDE06258298FD00D605EF /* Constraints.swift in Sources */,
 				78645CE7258266F200693ED7 /* OperationsViewController.swift in Sources */,
 				780A7ADD1EAA327500C104B9 /* ConsumptionTableViewCell.swift in Sources */,
 				78645CD625825B9900693ED7 /* Record.swift in Sources */,
 				78B1B1912582737400088B9D /* Consumption.swift in Sources */,
-				780A7AE11EAA3CC400C104B9 /* AddDataViewController.swift in Sources */,
 				7820B01B1EAA221B00CF4145 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

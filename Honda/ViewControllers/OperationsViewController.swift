@@ -2,10 +2,11 @@ import UIKit
 import Realm
 import RealmSwift
 
-class OperationsViewController: UITableViewController {
-
+class OperationsViewController: UITableViewController, AddOperationDelegate {
+    
     var operations = Operations()
 
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return operations.all.count
     }
@@ -36,4 +37,14 @@ class OperationsViewController: UITableViewController {
         }
     }
     
+    func addOperationWith(mileage: Int, price: Int, type: String, info: String) {
+        operations.add(OperationR(mileage: mileage, info: info, price: price, type: type))
+        tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addOperation", let destination = segue.destination as? AddOperaionViewController {
+            destination.delegate = self
+        }
+    }
 }
