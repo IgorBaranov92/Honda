@@ -61,7 +61,7 @@ extension AddOperaionViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "detail", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "operationCell", for: indexPath)
         if let myCell = cell as? ServiceListTableViewCell {
             switch indexPath.section {
             case 0: myCell.detailLabel.text = ServiceList.engine[indexPath.row]
