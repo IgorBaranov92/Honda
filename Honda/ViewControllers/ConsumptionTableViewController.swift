@@ -9,7 +9,6 @@ class ConsumptionTableViewController: UITableViewController, AddDataDelegate  {
     
     var consumption = Consumption()
     
-   
     // MARK: - TableView datasourse
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
