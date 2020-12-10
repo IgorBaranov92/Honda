@@ -122,14 +122,6 @@ class ConsumptionTableViewController: UITableViewController , NSFetchedResultsCo
                 destinationVC.delegate = self
             }
         }
-        if segue.identifier == "viewData" {
-            if let destinationVC = segue.destination as? ChangeDataViewController, let cell = sender as? ConsumptionTableViewCell,let index = tableView.indexPath(for: cell)?.row,let object = fetchedResultsController?.sections![0].objects?[index] as? Mileage {
-                destinationVC.mileage = Int(object.mileage)
-                destinationVC.place = object.place
-                destinationVC.date = object.date ?? ""
-                destinationVC.litrage = object.litrage
-            }
-        }
     }
     
     // MARK: - Helper functions

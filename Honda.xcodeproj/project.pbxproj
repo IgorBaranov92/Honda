@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		780A7AD91EAA325F00C104B9 /* ConsumptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A7AD81EAA325F00C104B9 /* ConsumptionTableViewController.swift */; };
-		780A7ADB1EAA326700C104B9 /* ServiceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A7ADA1EAA326700C104B9 /* ServiceTableViewController.swift */; };
 		780A7ADD1EAA327500C104B9 /* ConsumptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A7ADC1EAA327500C104B9 /* ConsumptionTableViewCell.swift */; };
 		780A7AE11EAA3CC400C104B9 /* AddDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A7AE01EAA3CC400C104B9 /* AddDataViewController.swift */; };
 		780A7AE61EAA57CB00C104B9 /* NonPasteableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A7AE51EAA57CB00C104B9 /* NonPasteableTextField.swift */; };
@@ -21,7 +20,6 @@
 		7820B0331EAA2FB400CF4145 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7820B0321EAA2FB400CF4145 /* Launch Screen.storyboard */; };
 		784A08EA1FB9F29F000C00C4 /* AddOperaionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A08E91FB9F29F000C00C4 /* AddOperaionViewController.swift */; };
 		784A08EE1FB9F60A000C00C4 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A08ED1FB9F60A000C00C4 /* ServiceTableViewCell.swift */; };
-		784E1F381EBA3D4600FA856F /* ChangeDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784E1F371EBA3D4600FA856F /* ChangeDataViewController.swift */; };
 		7853346222F1F80000043CEE /* FixTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853346122F1F80000043CEE /* FixTableViewController.swift */; };
 		7853346422F1F92F00043CEE /* FixTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7853346322F1F92F00043CEE /* FixTableViewCell.swift */; };
 		7860111322EB4EEB002F14A1 /* ServiceListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7860111222EB4EEB002F14A1 /* ServiceListTableViewController.swift */; };
@@ -30,6 +28,8 @@
 		78645CDB25825CCD00693ED7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 78645CDA25825CCD00693ED7 /* RealmSwift */; };
 		78645CDD25825CCD00693ED7 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 78645CDC25825CCD00693ED7 /* Realm */; };
 		78645CE025825DBF00693ED7 /* OperationR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78645CDF25825DBF00693ED7 /* OperationR.swift */; };
+		78645CE32582644400693ED7 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78645CE22582644400693ED7 /* Operations.swift */; };
+		78645CE7258266F200693ED7 /* OperationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78645CE6258266F200693ED7 /* OperationsViewController.swift */; };
 		787F7DDF22902F0E009A003F /* ServiceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F7DDE22902F0E009A003F /* ServiceList.swift */; };
 		78ACC6801EB0FCA00073E034 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACC67F1EB0FCA00073E034 /* Data.swift */; };
 		78ACC6841EB12FAC0073E034 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACC6831EB12FAC0073E034 /* DetailsTableViewCell.swift */; };
@@ -37,7 +37,6 @@
 
 /* Begin PBXFileReference section */
 		780A7AD81EAA325F00C104B9 /* ConsumptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsumptionTableViewController.swift; sourceTree = "<group>"; };
-		780A7ADA1EAA326700C104B9 /* ServiceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewController.swift; sourceTree = "<group>"; };
 		780A7ADC1EAA327500C104B9 /* ConsumptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsumptionTableViewCell.swift; sourceTree = "<group>"; };
 		780A7AE01EAA3CC400C104B9 /* AddDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDataViewController.swift; sourceTree = "<group>"; };
 		780A7AE51EAA57CB00C104B9 /* NonPasteableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonPasteableTextField.swift; sourceTree = "<group>"; };
@@ -55,7 +54,6 @@
 		784A08E41FB9EF08000C00C4 /* Consumption_v3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Consumption_v3.xcdatamodel; sourceTree = "<group>"; };
 		784A08E91FB9F29F000C00C4 /* AddOperaionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOperaionViewController.swift; sourceTree = "<group>"; };
 		784A08ED1FB9F60A000C00C4 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
-		784E1F371EBA3D4600FA856F /* ChangeDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeDataViewController.swift; sourceTree = "<group>"; };
 		7853346122F1F80000043CEE /* FixTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixTableViewController.swift; sourceTree = "<group>"; };
 		7853346322F1F92F00043CEE /* FixTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixTableViewCell.swift; sourceTree = "<group>"; };
 		7860111122EB4B1E002F14A1 /* Consumption_v 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Consumption_v 6.xcdatamodel"; sourceTree = "<group>"; };
@@ -63,6 +61,8 @@
 		7860111422EB4EF9002F14A1 /* ServiceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListTableViewCell.swift; sourceTree = "<group>"; };
 		78645CD525825B9900693ED7 /* Mileage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mileage.swift; sourceTree = "<group>"; };
 		78645CDF25825DBF00693ED7 /* OperationR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationR.swift; sourceTree = "<group>"; };
+		78645CE22582644400693ED7 /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
+		78645CE6258266F200693ED7 /* OperationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationsViewController.swift; sourceTree = "<group>"; };
 		787F7DDE22902F0E009A003F /* ServiceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceList.swift; sourceTree = "<group>"; };
 		78ACC67C1EB0AA0F0073E034 /* Consumption_v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Consumption_v2.xcdatamodel; sourceTree = "<group>"; };
 		78ACC67F1EB0FCA00073E034 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -117,6 +117,7 @@
 			children = (
 				7820B01E1EAA221B00CF4145 /* Main.storyboard */,
 				78645CD425825B7F00693ED7 /* Model */,
+				78645CEC25826F8200693ED7 /* View */,
 				784A08F11FBAE693000C00C4 /* ViewControllers */,
 				780A7AE21EAA486500C104B9 /* Cells */,
 				7820B02F1EAA2C4F00CF4145 /* Supporting Files */,
@@ -148,11 +149,10 @@
 		784A08F11FBAE693000C00C4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				784E1F371EBA3D4600FA856F /* ChangeDataViewController.swift */,
-				780A7AE01EAA3CC400C104B9 /* AddDataViewController.swift */,
+				78645CE6258266F200693ED7 /* OperationsViewController.swift */,
 				780A7AD81EAA325F00C104B9 /* ConsumptionTableViewController.swift */,
+				780A7AE01EAA3CC400C104B9 /* AddDataViewController.swift */,
 				784A08E91FB9F29F000C00C4 /* AddOperaionViewController.swift */,
-				780A7ADA1EAA326700C104B9 /* ServiceTableViewController.swift */,
 				7860111222EB4EEB002F14A1 /* ServiceListTableViewController.swift */,
 				7853346122F1F80000043CEE /* FixTableViewController.swift */,
 				780FD31B248FCD460026A46B /* ServiceStatisticTableViewController.swift */,
@@ -167,8 +167,16 @@
 				78ACC67F1EB0FCA00073E034 /* Data.swift */,
 				78645CD525825B9900693ED7 /* Mileage.swift */,
 				78645CDF25825DBF00693ED7 /* OperationR.swift */,
+				78645CE22582644400693ED7 /* Operations.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		78645CEC25826F8200693ED7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				784E1F381EBA3D4600FA856F /* ChangeDataViewController.swift in Sources */,
 				780A7AD91EAA325F00C104B9 /* ConsumptionTableViewController.swift in Sources */,
 				78ACC6801EB0FCA00073E034 /* Data.swift in Sources */,
+				78645CE32582644400693ED7 /* Operations.swift in Sources */,
 				7860111522EB4EF9002F14A1 /* ServiceListTableViewCell.swift in Sources */,
 				780FD31C248FCD460026A46B /* ServiceStatisticTableViewController.swift in Sources */,
 				784A08EA1FB9F29F000C00C4 /* AddOperaionViewController.swift in Sources */,
@@ -276,10 +284,10 @@
 				78645CE025825DBF00693ED7 /* OperationR.swift in Sources */,
 				780A7AE61EAA57CB00C104B9 /* NonPasteableTextField.swift in Sources */,
 				7853346422F1F92F00043CEE /* FixTableViewCell.swift in Sources */,
+				78645CE7258266F200693ED7 /* OperationsViewController.swift in Sources */,
 				780A7ADD1EAA327500C104B9 /* ConsumptionTableViewCell.swift in Sources */,
 				78645CD625825B9900693ED7 /* Mileage.swift in Sources */,
 				780A7AE11EAA3CC400C104B9 /* AddDataViewController.swift in Sources */,
-				780A7ADB1EAA326700C104B9 /* ServiceTableViewController.swift in Sources */,
 				7820B01B1EAA221B00CF4145 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

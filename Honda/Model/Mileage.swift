@@ -11,6 +11,10 @@ class MileageR: Object {
     @objc dynamic var petrol: String = ""
     @objc dynamic var place: String = ""
     @objc dynamic var type: String = ""
+    
+    convenience init(mileage:Int,consumption:Double,date:Date,litrage:Double,petrol:String,place:String,type:String) {
+        self.init()
+    }
 
     
 }

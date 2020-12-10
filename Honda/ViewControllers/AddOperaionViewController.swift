@@ -1,7 +1,6 @@
 import UIKit
-import CoreData
 
-class AddOperaionViewController: UITableViewController , UITextViewDelegate {
+class AddOperaionViewController: UITableViewController {
 
     // MARK: - Public API
     var currentTitle = String()

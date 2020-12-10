@@ -1,10 +1,5 @@
 import Foundation
 
-protocol ChangeDataDelegate : class {
-    func changeDataWith(mileage:Int,litrage:Double,place:String?,tripType:String,petrolType:String,differenceMileage:Int)
-    
-}
-
 protocol AddDataDelegate : class {
     func addDataWith(mileage:Int,litrage:Double,place:String?,tripType:String,petrolType:String,differenceMileage:Int)
 }
