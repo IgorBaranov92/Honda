@@ -15,10 +15,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HGv-Sh-iDV">
-                    <rect key="frame" x="8" y="196" width="327" height="82"/>
+                    <rect key="frame" x="8" y="196" width="398" height="82"/>
                     <subviews>
                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ptm-io-s6b">
-                            <rect key="frame" x="0.0" y="0.0" width="327" height="32"/>
+                            <rect key="frame" x="0.0" y="0.0" width="398" height="32"/>
                             <segments>
                                 <segment title="ГПН"/>
                                 <segment title="Shell"/>
@@ -27,7 +27,7 @@
                             </segments>
                         </segmentedControl>
                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="z18-PN-RAY">
-                            <rect key="frame" x="0.0" y="51" width="327" height="32"/>
+                            <rect key="frame" x="0.0" y="51" width="398" height="32"/>
                             <segments>
                                 <segment title="95"/>
                                 <segment title="95G"/>
@@ -38,10 +38,10 @@
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Npb-0E-gS5">
-                    <rect key="frame" x="8" y="101" width="327" height="87"/>
+                    <rect key="frame" x="8" y="101" width="398" height="87"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Stl-Ag-Bcm">
-                            <rect key="frame" x="0.0" y="0.0" width="327" height="35"/>
+                            <rect key="frame" x="0.0" y="0.0" width="398" height="35"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пробег" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jD-je-V3U">
                                     <rect key="frame" x="0.0" y="0.0" width="81" height="35"/>
@@ -50,14 +50,14 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVl-Ow-N1b" customClass="NonPasteableTextField" customModule="Honda" customModuleProvider="target">
-                                    <rect key="frame" x="92" y="0.0" width="235" height="35"/>
+                                    <rect key="frame" x="92" y="0.0" width="306" height="35"/>
                                     <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="22"/>
                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
                                 </textField>
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="6AY-h8-fzY">
-                            <rect key="frame" x="0.0" y="52" width="327" height="35"/>
+                            <rect key="frame" x="0.0" y="52" width="398" height="35"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Литров" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfG-oH-ybR">
                                     <rect key="frame" x="0.0" y="0.0" width="81" height="35"/>
@@ -66,7 +66,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4i3-Sp-9K4" customClass="NonPasteableTextField" customModule="Honda" customModuleProvider="target">
-                                    <rect key="frame" x="92" y="0.0" width="235" height="35"/>
+                                    <rect key="frame" x="92" y="0.0" width="306" height="35"/>
                                     <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="22"/>
                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                                 </textField>
@@ -75,10 +75,10 @@
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="16" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DM2-u7-6NF">
-                    <rect key="frame" x="8" y="286" width="327" height="60"/>
+                    <rect key="frame" x="8" y="286" width="398" height="60"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hy4-d7-tEa" customClass="DoneButton" customModule="Honda" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="155.5" height="60"/>
+                            <rect key="frame" x="0.0" y="0.0" width="191" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="1b4-zF-HM1"/>
                             </constraints>
@@ -96,10 +96,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WY9-LG-Vhv" customClass="DoneButton" customModule="Honda" customModuleProvider="target">
-                            <rect key="frame" x="171.5" y="0.0" width="155.5" height="60"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="200" id="SGt-pt-T5a"/>
-                            </constraints>
+                            <rect key="frame" x="207" y="0.0" width="191" height="60"/>
                             <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
                             <state key="normal" title="Отмена">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,7 +113,7 @@
                     </subviews>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заправка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pw-qe-JTB">
-                    <rect key="frame" x="121" y="54" width="101.5" height="29"/>
+                    <rect key="frame" x="156.5" y="54" width="101.5" height="29"/>
                     <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>

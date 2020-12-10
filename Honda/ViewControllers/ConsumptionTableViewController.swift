@@ -13,6 +13,21 @@ class ConsumptionViewController: UIViewController, AddDataDelegate, UITableViewD
     
     var consumption = Consumption()
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+    }
+
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            let dy = view.bounds.height - keyboardSize.height
+            let offset = mileageView.frame.origin.y + mileageView.bounds.height
+            mileageView.frame.origin.y -= (offset - dy + 10)
+        }
+    }
+    
+    
     // MARK: - TableView datasourse
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

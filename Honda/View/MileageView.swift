@@ -43,6 +43,8 @@ class MileageView: UIView, UITextFieldDelegate {
     
     @IBAction func cancel(_ sender: DoneButton) {
         delegate?.cancel()
+        litrageTextField.resignFirstResponder()
+        mileAgeTextField.resignFirstResponder()
     }
     
 }

@@ -9,7 +9,7 @@ class Constraints {
         v1.centerYAnchor.constraint(equalTo: v2.centerYAnchor).isActive = true
         let width = v2.bounds.width - 20
         v1.widthAnchor.constraint(equalToConstant: width).isActive = true
-        v1.heightAnchor.constraint(equalToConstant: width).isActive = true
+        v1.heightAnchor.constraint(equalToConstant: width - 30).isActive = true
     }
     
 }
