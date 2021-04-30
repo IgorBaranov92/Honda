@@ -16,9 +16,9 @@ class MileageView: UIView, UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if (string == "," && textField == litrageTextField)  {
             if litrageTextField.text == ""  {
-                
-            } else if litrageTextField.text?.last! == "." {
-                
+                return false
+            } else if litrageTextField.text?.last! == "." || litrageTextField.text!.contains(".") {
+                return false
             }
         }
         return true
@@ -39,6 +39,8 @@ class MileageView: UIView, UITextFieldDelegate {
   
     @IBAction func add(_ sender: DoneButton) {
         delegate?.addDataWith(mileage: Int(mileAgeTextField.text!)!, litrage: Double(litrageTextField.text!)!, place: placeControl.titleForSegment(at: placeControl.selectedSegmentIndex) ?? "", tripType: " ", petrolType: petrolControl.titleForSegment(at: petrolControl.selectedSegmentIndex) ?? "")
+        litrageTextField.resignFirstResponder()
+        mileAgeTextField.resignFirstResponder()
     }
     
     @IBAction func cancel(_ sender: DoneButton) {

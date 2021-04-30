@@ -16,11 +16,6 @@ class Consumption {
         }
     }
     
-//    func removeAll() {
-//        try! realm.write {
-//            realm.deleteAll()
-//        }
-//    }
     
     func delete(at index:Int) {
         let record = allRecords[index]

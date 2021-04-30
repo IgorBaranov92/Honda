@@ -16,18 +16,9 @@ class ConsumptionViewController: UIViewController, AddDataDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        updateAverage()
     }
-
-    @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
-            let dy = view.bounds.height - keyboardSize.height
-            let offset = mileageView.frame.origin.y + mileageView.bounds.height
-            mileageView.frame.origin.y -= (offset - dy + 10)
-        }
-    }
-    
-    
+        
     // MARK: - TableView datasourse
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -63,6 +54,7 @@ class ConsumptionViewController: UIViewController, AddDataDelegate, UITableViewD
         if editingStyle == .delete {
             consumption.delete(at: indexPath.row)
             tableView.reloadData()
+            updateAverage()
         }
     }
     
@@ -71,6 +63,7 @@ class ConsumptionViewController: UIViewController, AddDataDelegate, UITableViewD
         let realConsumption = (Double(litrage))/Double(difference) * 100
         consumption.append(Record(mileage: mileage, consumption: realConsumption, date: Date.stringFromDate(), litrage: litrage, petrol: petrolType, place: place, type: tripType))
         tableView.reloadData()
+        updateAverage()
         cancel()
     }
     
@@ -92,5 +85,18 @@ class ConsumptionViewController: UIViewController, AddDataDelegate, UITableViewD
         Constraints.activate(mileageView, view)
         AppearenceAnimator.show(mileageView)
     }
+    
+    private func updateAverage() {
+        let total = consumption.allRecords.count
+        let totalConsumption = consumption.allRecords.reduce(0) { $0 + $1.consumption }
+        var avgConsumption = totalConsumption/Double(total)
+        navigationItem.title = "Расход(\(avgConsumption.roundedByOne()))"
+        let currentConsumption = consumption.allRecords.first!.consumption
+        let currentMileage = consumption.allRecords.first!.mileage
+        let realTimeAVG = (avgConsumption + currentConsumption)/2
+        let nextMileage = currentMileage + Int((50.0/realTimeAVG * 100))
+        mileageLabel.text = "\(nextMileage)"
+    }
+
     
 }

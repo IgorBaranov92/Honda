@@ -7,8 +7,12 @@ class Operations {
     
     private let realm = try! Realm()
     
-    var all: Results<OperationR> {
-        return realm.objects(OperationR.self).sorted(byKeyPath: "mileage", ascending: false)
+    private(set) lazy var all = realm.objects(OperationR.self).sorted(byKeyPath: "mileage", ascending: false)
+       
+    func getOperation(_ key:String) -> OperationR {
+        return realm.objects(OperationR.self)
+            .sorted(byKeyPath: "mileage", ascending: false)
+            .filter { $0.type == key }.first!
     }
     
     func add(_ operation:OperationR) {

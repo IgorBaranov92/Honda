@@ -1,11 +1,11 @@
 import Foundation
 
-protocol AddDataDelegate : class {
+protocol AddDataDelegate : AnyObject {
     func addDataWith(mileage:Int,litrage:Double,place:String,tripType:String,petrolType:String)
     func cancel()
 }
 
-protocol AddOperationDelegate: class {
+protocol AddOperationDelegate: AnyObject {
     func addOperationWith(mileage:Int,price:Int,type:String,info:String)
 }
 
