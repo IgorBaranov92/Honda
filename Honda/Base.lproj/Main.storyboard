@@ -56,10 +56,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u0C-1s-9Mi" customClass="RoundedView" customModule="Honda" customModuleProvider="target">
-                                                    <rect key="frame" x="333" y="8" width="34" height="34"/>
+                                                    <rect key="frame" x="317" y="0.0" width="50" height="50"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uR-iC-Jrd">
-                                                            <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="23"/>
                                                             <nil key="textColor"/>
@@ -94,8 +94,8 @@
                                                 <constraint firstItem="u0C-1s-9Mi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="S5R-fa-0bI" secondAttribute="trailing" constant="8" symbolic="YES" id="ScU-JV-QmI"/>
                                                 <constraint firstItem="KsY-4D-e2b" firstAttribute="top" secondItem="uFP-ab-Lro" secondAttribute="top" id="X32-CH-g5O"/>
                                                 <constraint firstItem="KsY-4D-e2b" firstAttribute="top" secondItem="nQe-ir-ffe" secondAttribute="top" id="YAP-c3-pDX"/>
-                                                <constraint firstItem="u0C-1s-9Mi" firstAttribute="top" secondItem="nQe-ir-ffe" secondAttribute="top" constant="8" id="gYU-kS-1kX"/>
-                                                <constraint firstAttribute="bottom" secondItem="u0C-1s-9Mi" secondAttribute="bottom" constant="8" id="kP8-2R-y65"/>
+                                                <constraint firstItem="u0C-1s-9Mi" firstAttribute="top" secondItem="nQe-ir-ffe" secondAttribute="top" id="gYU-kS-1kX"/>
+                                                <constraint firstAttribute="bottom" secondItem="u0C-1s-9Mi" secondAttribute="bottom" id="kP8-2R-y65"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
